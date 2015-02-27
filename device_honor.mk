@@ -22,3 +22,8 @@ $(call inherit-product, build/target/product/full.mk)
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_honor
 PRODUCT_DEVICE := honor
+
+PRODUCT_PACKAGES += \
+	init.mtk.rc \
+	init.usb.rc \
+	ueventd.mtk.rc \

@@ -3,6 +3,9 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/huawei/honor/BoardConfigVendor.mk
 
+#setting device folder
+DEVICE_FOLDER=device/huawei/honor
+
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := unknown
@@ -14,6 +17,18 @@ TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_BOOTLOADER_BOARD_NAME := honor
+
+# power
+TARGET_POWERHAL_VARIANT := cm
+
+# Screen
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+DEVICE_RESOLUTION=720x1280
+
+# boot
+TARGET_NO_BOOTLOADER := true
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_FOLDER)/boot.mk
 
 BOARD_KERNEL_CMDLINE := 
 BOARD_KERNEL_BASE := 0x10000000
