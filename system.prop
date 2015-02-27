@@ -1,5 +1,3 @@
 #
 # system.prop for honor
 #
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.hardware=mtk
